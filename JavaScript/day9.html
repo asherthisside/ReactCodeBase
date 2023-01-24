@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: More with DOM and Event Handling</title>
+</head>
+
+<body>
+    <h1>First Heading</h1>
+    <h2>First Sub Heading</h2>
+    <button ondblclick="db()" onmouseover="abc()">Round Images</button>
+    <hr>
+    <img src="../../WeekendUIBatch/Bootstrap/images/blog3.jpg" alt="">
+    <h2>Let's color the page your way</h2>
+    Enter color: <input type="text" name="" id=""> 
+    <button>change color</button> <br>
+    <button id="btn1">click Here</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi hic maiores veniam aliquid soluta eius
+        nisi quisquam unde! Quae id ea pariatur nisi illum quis exercitationem laborum totam quia iste nam est rerum
+        recusandae vero atque ducimus aperiam, commodi sunt. Commodi asperiores in rem. Nobis exercitationem veniam
+        omnis deserunt autem necessitatibus nihil magni unde beatae, ad praesentium, id obcaecati assumenda culpa totam
+        similique quod odit ex, iste officiis velit? Vel rerum molestias ipsa ullam dolore, minima laborum repudiandae
+        commodi harum provident nisi deserunt beatae mollitia distinctio quidem est quam reprehenderit unde sit. Quas,
+        quae? Ex quasi nostrum provident est dolores blanditiis, culpa dicta porro velit consectetur corrupti possimus
+        aperiam esse mollitia distinctio tempore quos unde? Eos vel dolor labore delectus ea est impedit eligendi dicta
+        omnis iusto! Porro quia, nisi exercitationem sed possimus fugit aspernatur laudantium asperiores odio quis ad
+        assumenda distinctio, dolorum non placeat cupiditate! Cupiditate nemo molestias officiis, esse optio earum
+        obcaecati alias tempore. Animi odit nostrum aliquid eius hic autem recusandae corporis amet sit, pariatur
+        excepturi sapiente nisi omnis vero natus veniam libero, quas possimus suscipit explicabo reiciendis molestias
+        dolor? Nostrum fugit maiores deserunt a sapiente quos saepe facilis error, eligendi molestiae, expedita
+        praesentium sequi nemo!</p>
+    <img src="../../WeekendUIBatch/Bootstrap/images/blog2.jpg" alt="">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Feedback</li>
+        <li>Projects</li>
+    </ul>
+    <img src="../../WeekendUIBatch/Bootstrap/images/blog1.jpg" alt="">
+    <script>
+        // Document Object
+        // DOM (Document Object Model)
+        // DOM Manipulation (Document Object Model Manipulation)
+
+
+        // Selector Methods: 1. Single selector(getElementById and querySelector) | 
+        // 2. Multiple selector (getElementsByClassName, getElementsByTagName, getElementsByName and querySelectorAll()) 
+
+        // Combinators
+
+        // let list = document.querySelector("li")
+        // console.log(list);
+
+        let lists = document.querySelectorAll("li")
+        console.log(lists);
+
+        for (let i = 0; i < lists.length; i++) {
+            console.log(lists[i].innerHTML);
+        }
+
+        // Event handling - 
+        // For event handling we have 2 ways: a. Use the global attributes of HTML, b. Use the addEventListener method of document object.
+
+        function abc() {
+            alert("Function abc has been called");
+        }
+
+        function db() {
+            for (let i = 0; i < lists.length; i++) {
+                alert(lists[i].innerHTML);
+            }
+        }
+
+        let btn = document.getElementById("btn1")
+        btn.addEventListener("click", (e) => {
+            document.body.style.backgroundColor = "red"
+            console.log(e);
+        })
+
+        // Regular Expressions - 
+
+    </script>
+</body>
+
+</html>

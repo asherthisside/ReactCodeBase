@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Regular Expression</title>
+</head>
+<body>
+    <script>
+        // Regular Expression
+        let str = "I am in a hurry";
+        let regEx = /hurry/ 
+
+        // regEx Methods 
+        // console.log(regEx.exec(str))    // Returns the match array in case of match and null in case of no match 
+        // console.log(regEx.test(str));    // Returns true in case of match and false in case of no match  
+
+        // string methods 
+        // console.log(str.search(regEx));    // Returns the index number in case of match and -1 in case of no match 
+
+        // console.log(str.match(regEx))    // Returns the match array in case of match and null in case of no match 
+
+
+        // Character set - If we want to match a character from a given set, then the character sets are used. We use [] to represent a character set
+
+        str = "His mother loves eating currrrrry";
+        regEx = /c[ua]rry/
+        regEx = /c[a-z0-9]rry/
+        regEx = /c[aA-zZ0-9!@#$%^&* ]rry/
+
+        // Shorthand character classes
+        // caret symbol (^) - Used to check for a charater or a character in the beginning of a string.
+        // Dollar sign ($) - Used to check for a character or a character set in the ending of the string.
+        // Dot (.) - Checks for a atleast one character at its place.
+        // Asterisk (*) - Checks for any number of characters at its place (Zero or more).
+        // Question Mark (?) - Used to make a character or a character set optional.
+
+        regEx = /^[tin]/i
+        regEx = /^His/
+        regEx = /y$/
+        regEx = /[yeni.]$/
+        regEx = /c.rry/
+        regEx = /c*rry/
+        regEx = /ca?rry/
+
+        // Quantifiers - Used to specify the quantity that any number can be present in. We use curly bracket for a quantifier
+        regEx = /cur{2,5}y/
+
+        // let result = regEx.test(str)
+        // if(result) {
+        //     console.log("Match Found");
+        //     console.log(regEx.exec(str));
+        // }
+        // else {
+        //     console.log("No Match found");
+        // }
+
+        // Meta character symbols in JS regex 
+
+        // Create a regex for a name of length ranging between 3-20 characters and first letter should be a capital letter.
+
+        let nameRegEx = /^[A-Z][a-z]{2,19}$/
+        let name = "Harmanpreetsingh"
+
+        let result = nameRegEx.test(name)
+        if(result) {
+            console.log("Match Found");
+            console.log(nameRegEx.exec(name));
+        }
+        else {
+            console.log("No Match found");
+        }
+</script>
+</body>
+</html>

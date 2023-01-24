@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .dark-mode {
+            background-color: #030303;
+            color: #fdfdfd;
+        }
+
+        .round {
+            border-radius: 50%;
+            transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <h1>First Heading</h1>
+    <h2>First Sub Heading</h2>
+    <button>Round Images</button>
+    <hr>
+    <img src="../../WeekendUIBatch/Bootstrap/images/blog3.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi hic maiores veniam aliquid soluta eius nisi quisquam unde! Quae id ea pariatur nisi illum quis exercitationem laborum totam quia iste nam est rerum recusandae vero atque ducimus aperiam, commodi sunt. Commodi asperiores in rem. Nobis exercitationem veniam omnis deserunt autem necessitatibus nihil magni unde beatae, ad praesentium, id obcaecati assumenda culpa totam similique quod odit ex, iste officiis velit? Vel rerum molestias ipsa ullam dolore, minima laborum repudiandae commodi harum provident nisi deserunt beatae mollitia distinctio quidem est quam reprehenderit unde sit. Quas, quae? Ex quasi nostrum provident est dolores blanditiis, culpa dicta porro velit consectetur corrupti possimus aperiam esse mollitia distinctio tempore quos unde? Eos vel dolor labore delectus ea est impedit eligendi dicta omnis iusto! Porro quia, nisi exercitationem sed possimus fugit aspernatur laudantium asperiores odio quis ad assumenda distinctio, dolorum non placeat cupiditate! Cupiditate nemo molestias officiis, esse optio earum obcaecati alias tempore. Animi odit nostrum aliquid eius hic autem recusandae corporis amet sit, pariatur excepturi sapiente nisi omnis vero natus veniam libero, quas possimus suscipit explicabo reiciendis molestias dolor? Nostrum fugit maiores deserunt a sapiente quos saepe facilis error, eligendi molestiae, expedita praesentium sequi nemo!</p>
+    <img src="../../WeekendUIBatch/Bootstrap/images/blog2.jpg" alt="">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Feedback</li>
+        <li>Projects</li>
+    </ul>
+    <img src="../../WeekendUIBatch/Bootstrap/images/blog1.jpg" alt="">
+    <script>
+        // Document Object: JS is an object based language. Document object is also a predefined object that contains all the HTML of the webpage. It contains a lot of properties and methods to manipulate all that content.
+
+        let d = document
+        // d.body.children[0].innerHTML = "<i>This content was added later on</i>"
+        // d.body.children[1].innerHTML = "<i>This is changed through JS</i>"
+        // console.log(d.body.children[1].innerHTML);
+
+        // console.log(d.body.childElementCount);
+        // d.images[0].src = "../../WeekendUIBatch/Bootstrap/images/blog4.jpg"
+        // console.log(d.images[0].src)
+
+        // d.body.children[5].id = "par"
+        // console.log(d.body.children[5].id)
+        // d.body.children[5].className = "dark-mode"
+        // d.body.children[5].classList.add("def")
+        // d.body.children[5].classList.remove("dark-mode")
+        // console.log(d.body.children[5].classList)
+
+        d.body.style.backgroundColor = "red"
+        d.body.style.color = "white"
+
+    
+        let btn = document.querySelector("button")
+        btn.addEventListener("click", ()=> {
+            for(let i = 0; i <= 2; i++) {
+            d.images[i].classList.toggle("round")
+            d.images[i].style.transform = "translateX(500px)"
+        }
+        })
+
+        let newElement = document.createElement("li")
+        console.log(newElement);
+        newElement.id = "li6"
+        newElement.classList.add("list-item", "dark-mode")
+        newElement.innerHTML = "Testimonials"
+
+        // Selector Methods: To select any element 
+        // 2 Types of selector methods: 1. Single selectors (getElementById(), querySelector()), 2. Multiple selectors(getElementsByClassName(), getElementsByTagName(), getElementsByName(), querySelectorAll(".dark-mode"))
+
+        let list = document.querySelector("ul")
+        list.appendChild(newElement)
+
+        // 2 steps for DOM Manipulation - 1. Select the Element, 2. Use the respective methods or properties to manipulate that accordingly.
+        
+
+        // Event Handling
+        // Main Work of JS:
+        // Add new Content / Update existing content
+        // Add new Attributes / Update existing Attributes
+        // Add new CSS / Update existing CSS
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .round {
+            border-radius: 50%;
+        }
+
+        .test {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is me </h1>
+    <button id="re">ROund images</button>
+    <h2>Change border</h2>
+
+    <img src="2.jpg" alt="" width="50%">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis totam odio id, consectetur, facere culpa minus
+        reiciendis magnam odit cupiditate a fugit eligendi, quam porro optio adipisci atque deleniti nostrum quisquam
+        aperiam. Ullam explicabo suscipit aliquam eos voluptatem quae! Porro, at! Sunt possimus assumenda quo vero
+        magnam illum tenetur distinctio vitae iusto voluptates. Fugiat corrupti accusamus iusto impedit perferendis
+        similique est, eligendi eaque fuga dolore nisi maiores eveniet amet velit accusantium placeat tenetur architecto
+        modi perspiciatis quod, pariatur aspernatur quo nam! Perspiciatis sequi quibusdam iste veritatis, ducimus eum
+        repellendus quisquam omnis dolores alias eaque dolor aliquid deleniti! Aspernatur autem ducimus voluptatem in
+        optio cumque id officiis commodi, dignissimos laboriosam qui rerum. Est odit reprehenderit error sapiente
+        voluptatibus deserunt voluptates odio! Animi illum aperiam dolorem corporis, impedit officia architecto deserunt
+        eos vitae, dolor, ea tempora quia? Rem provident animi voluptatum quod exercitationem ratione, asperiores nobis
+        ea nemo magni magnam sit ut laudantium eius minus voluptate illum, repellat voluptatibus, perspiciatis velit!
+        Soluta, veniam blanditiis! Animi veritatis ullam provident labore voluptatum delectus similique placeat illum
+        sequi, reiciendis, quas saepe tempore impedit dignissimos harum omnis. Soluta obcaecati, qui vero quae quos
+        voluptas minus velit aliquam molestias quia esse culpa quasi, mollitia tempora impedit, itaque magni nihil
+        libero sit! Dolore id vel laudantium facere quibusdam cumque repellat excepturi assumenda commodi. Possimus
+        mollitia saepe numquam tenetur dolor! Et molestias dolor deleniti quos minus nisi, totam minima eum perspiciatis
+        numquam tempora labore consequatur ipsam tempore voluptate expedita ducimus inventore quisquam suscipit? Quis
+        earum hic optio est reprehenderit.</p>
+    <button id="run">change color</button>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>COntact</li>
+    </ul>
+    <img src="1.jpeg" alt="" width="50%">
+    <script>
+        let d = document
+        console.log(d.head.childNodes);
+        d.body.children[0].innerHTML = "Woww! this is superb"
+        d.body.children[2].id = "par"
+        console.log(d.body.children[0].innerHTML);
+        console.log(d.body.children[2].id)
+        // d.body.style.classList.add("test")="test"
+
+        let check = document.querySelector("#run")
+        check.addEventListener("click",()=>{
+            // d.body.style.backgroundColor = "red"
+            d.body.classList.add("test")
+        })
+
+        let btn = document.querySelector("#re")
+        btn.addEventListener("click", () => {
+            for (let i = 0; i <= 2; i++) {
+                d.images[i].classList.toggle("round")
+                console.log(d.images[i])
+
+            }
+
+        })
+    </script>
+</body>
+
+</html>

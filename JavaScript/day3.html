@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Operators</title>
+</head>
+
+<body>
+    <script>
+        // Operators: 
+        // 1. Arithmetic operators: Help in mathematical operations. +, -, *, /, **, %
+        // 2. Assignment operators: =, +=, -=, *=, /=
+        // 3. Relational operators: ==(Checks value only), ===(checks for datatype as well), <, >, <=, >=
+        // 4. Logical operators: AND, OR and NOT
+        let a = 30
+        let b = 20
+
+        // a += b  // (a = a + b)
+        // a -= b
+
+        console.log(a > b || a === "30" && a >= 20 || a == "30" && a % 2 == 0);
+
+        // Control structure - Sequential | Conditional(Branching)(IF | ELSE)(IF ELSE IF Ladder)(Nested IF ELSE) | Iterative
+
+        // if(condition) {
+        // statements
+        // }
+
+        // let age = 19
+        // let gender = "Female"
+        // if (age >= 18 || gender == "Male") {
+        //     console.log("You're selected for the job");
+        // }
+        // else {
+        //     console.log("You're not eligible for the job");
+        // }
+
+        let marks = 78
+        if (marks >= 90) {
+            console.log("Division 1");
+        }
+        else if (marks >= 80) {
+            console.log("Division 2");
+        }
+        else if (marks >= 70) {
+            console.log("Division 2");
+        }
+        else {
+            console.log("Passed");
+        }
+
+        // Nested IF - ELSE 
+
+        // Tokens: Smallest unit of a program(keywords, special symbols, identifier, operators)
+
+        // Literals: 
+        // let c = 45 
+        // let str = "string"
+        // "Numero Uno"
+
+        // Take a number, check whether it is greater than 20 or not, if yes then check if it is greater than 30 also. 
+
+        let d = 17
+        if (d > 20) {
+            console.log("Greater than 20");
+            if (d > 30) {
+                console.log("Greater than 30");
+            }
+            else {
+                console.log("Smaller than 30");
+            }
+        } 
+        else {
+            console.log("Smaller than 20");
+        }
+
+        // Take 3 numbers, print out which one is the largest number, smallest and middle one.
+    </script>
+</body>
+
+</html>

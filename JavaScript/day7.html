@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Arrays and Objects</title>
+</head>
+<body>
+    <script>
+        let a = true
+        // console.log(a);
+        // Array: Used to store the collection of values.
+        // 5000 students - marks (5000 variables)
+        
+        let arr = [10, 34, 54, 65, 678, 56, 576, 344, 768]
+        // arr[4] = "New Element"
+        // console.log(arr);
+
+        // For Loop 
+        for(let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        // Index Number: Numbers than denotes the position of an element in an array. Index numbers start from zero and goes up until arrays's length minus one.
+        // console.log(arr[arr.length - 1]);
+
+        // Array in JS are Heterogenous: The elements in array can be of different data types.
+
+        let arr2 = [1]
+        // console.log(arr2);
+        // console.log(arr2[4]);
+        // console.log(arr2[7]);
+        // console.log(arr2[9][2]);
+
+        // Using the Array constructor(new keyword)
+        let arr3 = new Array(1, 2, 3, 4, 5, 6, 7, 8)
+        // arr3[0] = "Vaibhav"
+        // arr3[1] = "Singh"
+        // arr3[2] = "1"
+        // arr3[3] = "2"
+        // console.log(arr3);
+
+        // Objects: Used to store the collection, the data here is stored in the form of key-value pairs.
+        let student = {
+            name: 'Akash', // property
+            class: 12, 
+            rollno: 0987, 
+            marks: [10, 9, 10, 8],
+            fav_game: function() {      // Methods
+                return "COD: War Zone"
+            }
+        }
+
+        // console.log(student.class);
+        // console.log(student.marks);
+        // console.log(student.fav_game());
+
+        // for - in loop 
+        // for - of loop 
+        // forEach loop 
+
+        // Document Object
+    </script>
+</body>
+</html>

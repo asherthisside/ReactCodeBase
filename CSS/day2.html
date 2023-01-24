@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS -Box Model</title>
+    <style>
+        p {
+            background-color: forestgreen;
+            text-align: justify;
+            /* padding-top: 35px;
+            padding-left: 35px;
+            padding-bottom: 35px;
+            padding-right: 35px; */
+            padding: 10px 15px 10px 15px;
+            /* padding: 10px 25px 45px; */
+
+            /* border-style: outset;
+            border-color: skyblue;
+            border-width: 5px; */
+            /* color: red; */
+            border: solid;
+            /* style, width, color */
+            border-radius: 35px;
+            border-top: 3px dashed orange;
+            border-bottom: 5px dashed orangered;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 100px;
+            /* margin: 30px; */
+
+            outline: 5px dotted fuchsia;
+            outline-offset: 20px;
+        }
+
+        .circle {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .abc {
+            width: 200px;
+            background-color: seagreen;
+            height: 200px;
+            margin: 10px auto;
+            padding: 50px;
+            border: 4px solid red;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 5px black, -5px 4px 10px red;
+        }
+        
+        .def {
+            width: 300px;
+            background-color: seagreen;
+            height: 300px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat assumenda vel odit soluta sit accusantium facere eaque non qui voluptas pariatur cum optio ullam placeat minus amet nam sint tempore, ipsam eos iste maxime quaerat. Eveniet nostrum, odio ipsa vitae omnis saepe aut delectus quaerat, alias laboriosam, labore accusamus consequuntur optio consectetur ex eos assumenda sint mollitia ipsam nobis et quidem facilis repellendus exercitationem. Tenetur in autem suscipit minus, facere magnam sed ipsa fugiat mollitia provident modi doloremque sit nesciunt inventore earum, dolore natus ipsam cum perspiciatis est laborum! Debitis explicabo laborum expedita molestias provident excepturi illo. Assumenda, necessitatibus. Qui nostrum officiis voluptates expedita temporibus repudiandae porro eveniet, dolores adipisci suscipit fugiat obcaecati omnis, illo aliquam perferendis dolorum fugit, possimus numquam aut voluptatem! Enim vel tempora, ipsa consequatur ducimus quos cupiditate, rem suscipit possimus repellendus harum quidem dolore obcaecati veniam cum doloribus corporis ad impedit omnis odio modi hic tenetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat assumenda vel odit soluta sit accusantium facere eaque non qui voluptas pariatur cum optio ullam placeat minus amet nam sint tempore, ipsam eos iste maxime quaerat. Eveniet nostrum, odio ipsa vitae omnis saepe aut delectus quaerat, alias laboriosam, labore accusamus consequuntur optio consectetur ex eos assumenda sint mollitia ipsam nobis et quidem facilis repellendus exercitationem. Tenetur in autem suscipit minus, facere magnam sed ipsa fugiat mollitia provident modi doloremque sit nesciunt inventore earum, dolore natus ipsam cum perspiciatis est laborum! Debitis explicabo laborum expedita molestias provident excepturi illo. Assumenda, necessitatibus. Qui nostrum officiis voluptates expedita temporibus repudiandae porro eveniet, dolores adipisci suscipit fugiat obcaecati omnis, illo aliquam perferendis dolorum fugit, possimus numquam aut voluptatem! Enim vel tempora, ipsa consequatur ducimus quos cupiditate, rem suscipit possimus repellendus harum quidem dolore obcaecati veniam cum doloribus corporis ad impedit omnis odio modi hic tenetur.</p>
+
+    <div class="abc"></div>
+    <div class="def"></div>
+
+    <!-- Centering a div. -->
+    <!-- 1. block level Element.
+    2. fixed width 
+    3. margin-left and margin-right set to auto -->
+
+    Total width = width + padding(left and right) + border(left and right)
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Functions</title>
+</head>
+<body>
+    <h1>This is the Introduction</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi at corporis in mollitia! Illum voluptatibus voluptate harum reprehenderit explicabo ex ratione enim similique expedita deleniti fuga, sequi est asperiores adipisci. Id tenetur quis quisquam, vitae, dignissimos beatae aperiam nesciunt placeat quod ratione amet laborum. Nihil, rem sequi sunt quia cupiditate odit eligendi perferendis, porro earum culpa commodi autem delectus animi illum minus! Quod dignissimos minima illum deserunt modi earum, magni voluptate voluptatum ullam, ipsam vero assumenda odio neque tempore culpa aperiam laboriosam. Nam quod iste odio quibusdam? Sunt, aliquid nostrum officiis quam ipsam placeat ad numquam. Accusantium, voluptatem officiis?</p>
+    <script>
+        // Largest | Smallest | Middle One 
+
+        // let first = 560 
+        // let second =  4551
+        // let third = 560
+
+        // if (first > second && first > third) {
+        //     console.log(first, "is the largest number");
+        //     if (second > third) {
+        //         console.log(second, "is the middle one");
+        //         console.log(third, "is the smallest");
+        //     }
+        //     else {
+        //         console.log(third, "is the middle one");
+        //         console.log(second, "is the smallest");
+        //     }
+        // }
+        // else if(second > first && second > third) {
+        //     console.log(second, "is the largest number");
+        //     if (first > third) {
+        //         console.log(first, "is the middle one");
+        //         console.log(third, "is the smallest");
+        //     }
+        //     else {
+        //         console.log(third, "is the middle one");
+        //         console.log(first, "is the smallest");
+        //     }
+        // }
+        // else if(third > first && third > second){
+        //     console.log(third, "is the largest");
+        //     if (first > second) {
+        //         console.log(first, "is the middle one");
+        //         console.log(second, "is the smallest");
+        //     }
+        //     else {
+        //         console.log(second, "is the middle one");
+        //         console.log(first, "is the smallest");
+        //     }
+        // }
+        // else {
+        //     console.log("Two or more numbers are same");
+        // }
+
+        // Functions: ?
+        // Block of reusable code, that gets executed when called. 
+        // 2 Types: Pre-defined function | User-defined functions 
+
+        // 3 Steps: a. Function Declaration | b. Function definition | c. Function calling(Invoking)
+
+        // User - Defined functions: 
+        function func_one() {
+            console.log("This is a function");
+            console.log("Printing the sum of 2 numbers 34 and 54");
+            console.log(34 + 54);
+        }
+
+        // func_one()
+        // func_one()
+
+        let time = "Evening"
+        if (time == "Morning") {
+            console.log("Good Morning");
+        }
+        else {
+            console.log("Good Evening");
+        }
+
+        // func_one()
+
+        // func_one()
+
+        // Increase the modularity in code - 
+        function add() {
+            console.log(2 + 2);
+        }
+
+        function subtract() {
+            console.log(2 - 2);
+        }
+
+        function multiply() {
+            console.log(2 * 2);
+        }
+
+        // add()
+        add()
+
+        // Parameters
+
+        function addition(a, b) {
+            console.log(a + b);
+        }
+
+        addition(23, 17)
+        addition(230, 107)
+        addition(2310, 1070)
+        addition(23100, 10700)
+
+        // Parameters and arguments - Interchangrably used, 
+        // NaN - Not a Number 
+
+        // JS Boxes: 
+
+        // alert("Hey! Beware")
+
+        // Prompt box: Made by using prompt() function 
+
+        // let abc = parseInt(prompt("Enter a number"))
+        // console.log(abc, typeof abc);
+
+        // Confirm box 
+        let choice = confirm("Want to turn on dark mode?")
+        console.log(choice);
+
+        if (choice) {
+            document.body.style.backgroundColor = "#303030"
+            document.querySelector("h1").style.color = "#cfcfcf"
+            document.querySelector("p").style.color = "#cfcfcf"
+        }
+        else {
+            console.log("Continuing with default mode");
+        }
+
+
+        // Take 2 numbers from the user. The ask for their choice of operation(Make them enter a number). if the number is 1, add the two given numbers, if it is 2, then subtract the numbers, if 3, then multiply, and if 4, divide.
+</script>
+</body>
+</html>

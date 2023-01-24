@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Asynchronous Programming</title>
+</head>
+<body>
+    <!-- 
+        // Synchronous Programming 
+        // Asynchronous programming 
+
+        // Step 1 
+        // Step 2 
+        // Step 4 - 
+        // Step 5 - 
+        // Step 3 - Network request ~5 sec
+
+        // Callback Functions 
+        // Promise 
+     -->
+<!-- Dummy Data ->  -->
+    <script>
+        function getTodos(callback, url) {
+            let request = new XMLHttpRequest;
+            request.open('GET', url)
+            request.send()
+            request.addEventListener("readystatechange", () => {
+            if (request.readyState === 4 && request.status === 200) {
+                const data = JSON.parse(request.responseText);
+                callback(undefined, data)
+            }
+            else {
+                // console.log("Error Fetching data. Request could not be completed");
+                callback("Error Fetching data. Request could not be completed", undefined)
+            }
+        })
+        }
+
+        // 2 Parts: 1. Fetch data or error || 2. Print data or error 
+
+        // console.log(1);
+        // console.log(2);
+        getTodos(print_data, "https://jsonplaceholder.typicode.com/todos/1")
+        // console.log(3);
+        // console.log(4);
+
+        function print_data(error, data) {
+            if (error) {
+                console.log(error);
+            }
+            else {
+                console.log(data);
+                getTodos((error, data) => {
+                if (error) {
+                console.log(error);
+                }
+                else {
+                    console.log(data);
+                    getTodos((error, data) => {
+                        if(error) {
+                            console.log(error);
+                        }
+                        else {
+                            console.log(data);
+                        }
+                    }, "https://jsonplaceholder.typicode.com/todos/3")
+                }
+                }, "https://jsonplaceholder.typicode.com/todos/2")
+            }
+        }
+
+        // Messy - Callback hell 
+
+        // Callbacks - Function calls another function inside it. 
+        // function abc() {
+        //     return "This is a function named - abc";
+        // }
+
+        // function def() {
+        //     return abc
+        // }
+
+        // const result = def()
+        // console.log("Result says:", result())
+
+        // function executor(func) {
+        //     // ABC 
+        //     func()
+        // }
+
+        // function print_name() {
+        //     let name = prompt("Enter you name")
+        //     console.log("Welcome", name, ", How are you??");
+        // }
+
+        
+
+        // executor(abc)
+        // executor(print_name)
+
+        // Promise - Object 
+    </script>
+</body>
+</html>

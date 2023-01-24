@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Display properties</title>
+    <style>
+        a {
+            display: block;
+            background-color: violet;
+            height: 100px;
+            width: 200px;
+            margin: 10px auto;
+        }
+
+        h1 {
+            display: inline-block;
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+        }
+
+        nav {
+            background-color: slateblue;
+            height: 70px;
+        }      
+        
+        ul {
+            width: 60%;
+            /* border: solid; */
+            margin: auto;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 15px 3px;
+        }
+
+        /* Layout Creation */
+
+        .container {
+            min-height: 100vh;
+            background-color: rgb(192, 255, 255);
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            flex-flow: column wrap;
+            justify-content: space-evenly;  /* to align the content along main axis */
+            align-items: center;
+
+        }
+
+        /* main-axis:  */
+        /* cross-axis:  */
+
+        .child {
+            height: 100px;
+            width: 100px;
+            border: solid;
+            margin: 10px;
+        }
+
+        #child-1 {
+            order: 1;
+            /* flex-grow: 1; */
+        }
+
+        #child-2 {
+            order: 3;
+        }
+
+        #child-3 {
+            /* flex-grow: 2; */
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+    Elements: 2 Possible display properties (Block and Inline elements)
+    <h1>This is a heading</h1>
+    <h1>This is a heading</h1>
+    <h1>This is a heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio exercitationem ducimus vel numquam! Facilis qui itaque nisi, rerum voluptas necessitatibus tempore sit obcaecati nam sapiente enim reprehenderit praesentium voluptates, expedita est aut repellat, quasi magni sunt libero ipsam! Officia id eius ut ad odio reprehenderit, cupiditate natus quo officiis doloribus pariatur! Eveniet veritatis dolorem rerum aut quod? Debitis dignissimos temporibus, laboriosam asperiores architecto alias cumque, impedit at, accusantium iste mollitia odit. Fugiat saepe illo molestias explicabo eius, unde amet! Corrupti, sed? Temporibus, similique ea ullam nobis voluptas distinctio velit sint facilis quis laudantium eaque ut quos aperiam, excepturi alias quia!</p>
+    <img src="../../../../Downloads/1664900369210.jpg" alt="">
+    <a href="day1.html">Click here</a>
+    <a href="day2.html">Click here</a>
+    <a href="">Click here</a>
+    <a href="">Click here</a>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Project</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+    Layout Creation tool: Flexbox(Flexible box whose outer dimensions are dependent upon the inner content). 
+
+    <div class="container">
+        <div class="child" id="child-1">Child - 1</div>
+        <div class="child" id="child-2">Child - 2</div>
+        <div class="child" id="child-3">Child - 3</div>
+        <div class="child" id="child-4">Child - 4</div>
+    </div>
+
+    
+</body>
+</html>

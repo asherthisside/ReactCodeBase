@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Measuring Units</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /* 2000px | 1400px */
+
+        .container {
+            /* width: 80%; */
+            width: 70%;
+            background-color: hwb(60 0% 0%);
+            /* height: 400px; */
+            height: 100vh;
+            font-size: 1.25rem;      /* 20px */
+        }
+
+        /* % and vw - will they always be equal? */
+        
+        .inner-container {
+            height: 300px;
+            width: 50vw;
+            margin: auto;
+            background-color: burlywood;
+            font-size: 1.25rem;
+        }
+        
+        .extra {
+            width: 90%;
+            background-color: rgb(0, 139, 139, 0.2);
+            font-size: 1.25rem;
+        }
+        /* em: Works in accordance with the font-size of parent element. 1em is equal to 1 times of parent's font-size. */
+        /* rem: Works in accordance with the font-size of root element(html). 1rem is equal to 1 times of root's font-size. */
+        /* vh - viewport's height - Total viewport height is 100vh */
+        /* vw - viewport's width - Total viewport width is 100vw */
+    </style>
+</head>
+<body>
+    <!-- Measuring Units: 
+    Absolute units(px), Relative units(%, em, rem, vh and vw) -->
+
+    <div class="container">     <!--font-size: 30px-->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, ipsam? Dolorum sunt accusantium corrupti aut voluptas velit soluta, cupiditate placeat similique vel dignissimos excepturi qui assumenda numquam, praesentium accusamus, nisi sit possimus.
+        <div class="inner-container">       <!--1em = 30px-->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sunt veniam minus quae velit? Ipsam accusantium incidunt odio earum odit.
+            <div class="extra">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi sunt, iste ut tenetur tempora hic. Debitis laudantium quas quia non maxime sapiente eveniet minima, consectetur commodi, labore voluptas blanditiis minus.
+            </div>
+        </div>
+    </div>
+
+    <!-- Colors: Name | Hex Value | RGB | HSL -->
+
+    <!-- Primary Colors: R | G | B -->
+    <!-- #FF0000 -->
+    <!-- rgb(255, 255, 255) -->
+    <!-- Hue | Saturation | Lightness -->
+
+    <!-- JS - Variable and Datatypes | Operators and If-else | Loops and Functions | Array and Objects(Document Object) | DOM Manipulation | Asynchronous js | -->
+
+    React JS: 
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Date Object</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background: linear-gradient(135deg, grey, salmon, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .date {
+            font-size: 3em;
+        }
+
+        .time {
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="date"></div>
+        <div class="time"></div>
+    </div> -->
+    <br>
+    Write your name: <input type="text" name="" id="val"> <button>OK!</button>
+    <script>
+        let d = new Date;
+        // console.log(d.toLocaleString());
+
+        let d2 = new Date(2023, 0, 23)
+        // console.log(d2.toLocaleString());
+
+        // setInterval and setTimeout 
+        function normal() {
+            alert("Function normal has been invoked")
+        }
+
+        // normal()
+        // setTimeout(normal, 3000)
+
+        let datecontainer = document.querySelector(".date")
+        let timecontainer = document.querySelector(".time")
+
+        // let currenttime = () => {
+        //     let d3 = new Date;
+        //     datecontainer.innerHTML = d3.toLocaleDateString()
+        //     timecontainer.innerHTML = d3.toLocaleTimeString()
+        // }
+        // currenttime()
+        // setInterval(currenttime, 1000)
+
+        // Client Side scripting: DOM Manipulation | Form Validations
+
+        // Regular expression - Complex search strings that are used to search for a pattern in a string.
+
+        let btn = document.querySelector("button")
+        let val = document.getElementById("val")
+
+        btn.addEventListener("click", ()=> {
+            let v = val.value;
+            if (v == "Akash" || v == "Vaibhav") {
+            // if(v.length > 5) {
+                // console.log(v);
+                alert("The value is correct");
+                val.style.border = "2px solid green"
+            }
+            else {
+                alert("The value is incorrect");
+                val.style.border = "2px solid red"
+            }
+        })
+
+        // Capital first letter | length 3 - 20 | alphabets or whitespace 
+        // Phne number: first digit 6-9 | length : 10 characters | all digits
+
+        // RegEx 
+
+        
+    </script>
+</body>
+</html>
+
+<!-- Calculator | Clock(Digital or Analog) | Timer | To-Do list -->

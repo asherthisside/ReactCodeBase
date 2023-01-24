@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Introduction to Asynchronous Programming</title>
+</head>
+<body>
+    <ol>
+        <li>Abc</li>
+        <li>def</li>
+        <li>ghi</li>
+        <li>jkl</li>
+        <li>mno</li>
+        <li>pqr</li>
+    </ol>
+    <script>
+        let items = document.querySelectorAll("li")
+        // console.log(items);
+
+        // for(let i = 0; i < items.length; i++) {
+        //     console.log(items[i].innerHTML);
+        // }
+
+        let ol = document.querySelector("ol")
+        console.log(ol.children)
+
+        for(let i = 0; i < ol.children.length; i++) {
+            console.log(ol.children[i].innerHTML);
+        }
+        let request = new XMLHttpRequest;
+        // console.log(request);
+        request.addEventListener("readystatechange", () => {
+        const ol = document.querySelector("ol")
+            // console.log(request.readyState, request);
+            if (request.readyState === 4) {
+                const data = JSON.parse(request.responseText);
+                // console.log(typeof data);
+                for(let i = 0; i < data.length; i++) {
+                    let newElement = document.createElement("li")
+                    newElement.innerHTML = data[i].userId + " " + data[i].title + " " + data[i].completed
+                    ol.appendChild(newElement)
+                    // console.log(data[i].id, data[i].title, data[i].completed);
+                }
+            }
+        })
+        // request.open('GET', 'https://jsonplaceholder.typicode.com/todos/')
+        // request.send()
+
+        // Synchronous Programming 
+        // Asynchronous programming 
+
+        // Step 1 
+        // Step 2 
+        // Step 4 - 
+        // Step 5 - 
+        // Step 3 - Network request ~5 sec
+
+        // Callback Functions 
+        // Promise 
+    </script>
+</body>
+</html>
+
+Request - ready state => Number depicting the state of request 
+Status Code -> Response Status 
+
+
+

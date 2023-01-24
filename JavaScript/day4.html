@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Introduction</title>
+</head>
+<body>
+    <!-- 
+    num1 > num2 and num1 > num3 
+        num1 is largest 
+        num2 > num3 => num2 is middle one | num3 is smallest 
+        else 
+        num3 is middle one | num2 is smallest 
+    else 
+    num2 > num1 and num2 > num3 
+        num2 is largest
+        num1 > num3 => num1 is middle one | num 3 is smallest
+        else 
+        num3 is middle one | num1 is smallest
+    else 
+    num3 > num1 and num3 > num2 
+        num3 is largest
+        num1 > num2 => num1 is middle one | num2 is smallest 
+        else 
+        num2 is middle one | num1 is smallest  
+    -->
+
+    <script>
+        // Loops - Iterative control structure 
+        // DRY Approach -> Don't repeat yourself 
+
+        // 2 Types: 
+        // 1. Entry control loop 
+        // 2. Exit control loop - Do-while
+
+        // Loop - they are bound to run forever
+        // Controlled Environment: Condition to start and Condition to end  
+
+        // Condition Initialization 
+        // while(condition) {
+            // statements 
+            // Update (One of the most step)
+        // }
+        
+        // let count = 1 
+        // while(count <= 10) {
+        //     console.log(count, "My Name is Amit");
+        //     count++;
+        // }
+
+        // console.log(count);
+
+        // Print a table of number 23 
+
+        let table = 11
+        // while (table <= 10) {
+        //     console.log(table * 23);
+        //     table++;
+        // }
+        // Statements 
+
+        do {
+            console.log(23 * table);
+            table++;
+        } while(table <= 10)
+
+
+        // For Loop | Entry Control loop
+        // for(initialization; Check; Update) {
+            // statements
+        // }
+
+        for(let i = 1; i <= 10; i++) {
+            console.log(i, "My name is Amit");
+        }
+
+        // For loop -> While we dealing with collections (Array or Objects)
+
+        // For loops (ForEach loop | for-in loop | for-of loop)
+    </script>
+</body>
+</html>

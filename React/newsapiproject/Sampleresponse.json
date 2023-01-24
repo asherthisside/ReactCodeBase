@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 33,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "",
+            "title": "Cowboys' Brett Maher has first extra-point vs. 49ers blocked, rebounds with two field goals in second half - CBS Sports",
+            "description": "Maher has now missed six of his last seven point-after attempts",
+            "url": "https://www.cbssports.com/nfl/news/cowboys-brett-maher-has-first-extra-point-vs-49ers-blocked-rebounds-with-two-field-goals-in-second-half/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2023/01/23/704c87b0-7d52-4bcd-848d-b85444c9acda/thumbnail/1200x675/bae14dfb938b97b668dd26d256d3bf7d/brett-maher.jpg",
+            "publishedAt": "2023-01-23T02:08:00Z",
+            "content": "Dallas Cowboys kicker Brett Maher had himself an awful game last week against the Tampa Bay Buccaneers, \r\nOn each of the Cowboys' first four touchdowns, Maher missed the extra point. He pushed the fi… [+2930 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Germany would not block Poland from sending tanks to Ukraine, minister says - Reuters",
+            "description": "Germany's foreign minister said on Sunday her government would not stand in the way if Poland wants to send its Leopard 2 tanks to Ukraine, in a possible breakthrough for Kyiv which wants the tanks for its fight against Russia's invasion.",
+            "url": "https://www.reuters.com/world/europe/france-does-not-rule-out-sending-leclerc-tanks-ukraine-macron-2023-01-22/",
+            "urlToImage": "https://www.reuters.com/resizer/gV4Tx9IVUGNh6jw8aEAaSYIivbg=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/K7W2GIHXTRLRDNZIDXQCRRWUTQ.jpg",
+            "publishedAt": "2023-01-23T01:05:00Z",
+            "content": "PARIS, Jan 22 (Reuters) - Germany's foreign minister said on Sunday her government would not stand in the way if Poland wants to send its Leopard 2 tanks to Ukraine, in a possible breakthrough for Ky… [+3597 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Ryan Gaydos",
+            "title": "Joe Burrow drops cold line after Bengals' win nixes neutral site AFC Championship - Fox News",
+            "description": "Joe Burrow led the Cincinnati Bengals to a playoff victory over the Buffalo Bills and then talked to CBS' Tracy Wolfson after the game.",
+            "url": "https://www.foxnews.com/sports/joe-burrow-drops-cold-line-bengals-win-nixes-neutral-site-afc-championship",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2023/01/Joe-Burrow14.jpg",
+            "publishedAt": "2023-01-23T00:10:00Z",
+            "content": "The Cincinnati Bengals may have had an added chip on their shoulder going into their divisional-round matchup against the Buffalo Bills as some players have expressed animosity toward the promotion o… [+2622 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Post"
+            },
+            "author": "David Propper",
+            "title": "Top Russian official warns of 'global tragedy' if allies send Ukraine new weapons - New York Post ",
+            "description": "“Supplies of offensive weapons to the Kyiv regime would lead to a global catastrophe,” said Volodin.",
+            "url": "https://nypost.com/2023/01/22/vyacheslav-volodin-issues-warning-to-allies-giving-weapons-to-ukraine/",
+            "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2023/01/newspress-collage-25462675-1674432176296.jpg?quality=75&strip=all&1674414254&w=1024",
+            "publishedAt": "2023-01-23T00:05:00Z",
+            "content": "A leading official in Russias parliament is warning of a global tragedy if Ukraine gets new weapons from allies as the bitter fight between the two nations nears the 11-month mark.\r\nVyacheslav Volodi… [+4061 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "Katherine Clark’s daughter arrested in clash with police at Boston protest - The Hill",
+            "description": null,
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMidmh0dHBzOi8vdGhlaGlsbC5jb20vaG9tZW5ld3MvaG91c2UvMzgyNTI5Ny1rYXRoZXJpbmUtY2xhcmtlcy1kYXVnaHRlci1hcnJlc3RlZC1pbi1jbGFzaC13aXRoLXBvbGljZS1hdC1ib3N0b24tcHJvdGVzdC_SAXpodHRwczovL3RoZWhpbGwuY29tL2hvbWVuZXdzL2hvdXNlLzM4MjUyOTcta2F0aGVyaW5lLWNsYXJrZXMtZGF1Z2h0ZXItYXJyZXN0ZWQtaW4tY2xhc2gtd2l0aC1wb2xpY2UtYXQtYm9zdG9uLXByb3Rlc3QvYW1wLw?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-01-22T23:49:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Holly Yan, Keith Allen, Tina Burnside, Josh Campbell, Alaa Elassar",
+            "title": "Person in van that may be linked to the Monterey Park massacre dead from self-inflicted gunshot wound, LA Times says - CNN",
+            "description": "A man who was barricaded in a white van in Torrance, California, believed to be tied to the Monterey Park dance studio shooting, is dead, the Los Angeles Times reported.",
+            "url": "https://www.cnn.com/2023/01/22/us/monterey-park-california-shooting/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230122131609-bpt102-monterey-park-shooting-012223.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-01-22T23:45:00Z",
+            "content": "Torrance, CaliforniaCNN\r\n  — \r\nA man who was barricaded in a white van in Torrance, California, believed to be tied to the Monterey Park dance studio shooting, is dead, the Los Angeles Times reported… [+6107 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "George Santos on drag photos: ‘I had fun at a festival’ - The Hill",
+            "description": null,
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMiYGh0dHBzOi8vdGhlaGlsbC5jb20vaG9tZW5ld3MvaG91c2UvMzgyNTIyMS1nZW9yZ2Utc2FudG9zLW9uLWRyYWctcGhvdG9zLWktaGFkLWZ1bi1hdC1hLWZlc3RpdmFsL9IBZGh0dHBzOi8vdGhlaGlsbC5jb20vaG9tZW5ld3MvaG91c2UvMzgyNTIyMS1nZW9yZ2Utc2FudG9zLW9uLWRyYWctcGhvdG9zLWktaGFkLWZ1bi1hdC1hLWZlc3RpdmFsL2FtcC8?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-01-22T23:29:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+            "author": "Tanaya Macheel",
+            "title": "Stock futures are flat as investors weigh the Fed's next policy move and await a busy earnings week - CNBC",
+            "description": "Investors were assessing a potential slowdown or pause in Federal Reserve rate hikes and looked ahead to a busy week of earnings.",
+            "url": "https://www.cnbc.com/2023/01/22/stock-market-futures-open-to-close-news.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/107133389-NYSE-Trading-Floor-OB-20221012-CC-PRESS-6.jpg?v=1674428738&w=1920&h=1080",
+            "publishedAt": "2023-01-22T23:15:00Z",
+            "content": "Stock futures were little changed Sunday evening as investors weighed a potential slowdown or pause in Federal Reserve interest rate hikes and looked ahead to a busy week of earnings.\r\nFutures tied t… [+2052 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Andi Babineau, John Miller",
+            "title": "Baton Rouge nightclub shooting injures 12 - CNN",
+            "description": "Police in Baton Rouge, Louisiana, are searching for at least one suspect involved in a nightclub shooting that left a dozen people injured, according to L'Jean McKneely, Baton Rouge Police Department spokesperson.",
+            "url": "https://www.cnn.com/2023/01/22/us/louisiana-shooting-baton-rouge-nightclub/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230122154007-baton-rouge-nightclub-shooting-012223.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-01-22T22:50:00Z",
+            "content": "Police in Baton Rouge, Louisiana, are searching for at least one suspect involved in a nightclub shooting that left a dozen people injured, according to LJean McKneely, Baton Rouge Police Department … [+1750 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Dan Heching",
+            "title": "'Avatar: The Way of Water' crosses $2 billion mark in worldwide box office - CNN",
+            "description": "As has frequently been the case throughout his unparalleled career, James Cameron made film history again this weekend.",
+            "url": "https://www.cnn.com/2023/01/22/entertainment/avatar-way-of-water-2-billion/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/220509122407-01-avatar-the-way-of-water.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-01-22T22:44:00Z",
+            "content": "As has frequently been the case throughout his unparalleled career, James Cameron made film history again this weekend.\r\nHis long-awaited sequel Avatar: The Way of Water has now made over $2 billion … [+1046 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "SciTechDaily"
+            },
+            "author": null,
+            "title": "New Research: Eating Grapes Can Protect Against UV Damage to Skin - SciTechDaily",
+            "description": "A recent study highlights the potential of grapes in providing photoprotection. A recent study published in the journal Antioxidants has shown that consuming grapes can protect against UV damage to the skin. The study participants who consumed 2 ¼ cups of gra…",
+            "url": "https://scitechdaily.com/?p=245362",
+            "urlToImage": "https://scitechdaily.com/images/Person-Holding-Grapes.jpg",
+            "publishedAt": "2023-01-22T22:36:26Z",
+            "content": "UV damage to the skin is caused by exposure to ultraviolet radiation from the sun or artificial sources such as tanning beds. UV radiation can cause a variety of skin problems, including sunburn, pre… [+3350 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Kotaku"
+            },
+            "author": "Luke Plunkett",
+            "title": "343, Hit By Layoffs And Key Departures, Says It Will Keep Making Halo Games - Kotaku",
+            "description": "'343 Industries will continue to develop Halo now and in the future'",
+            "url": "https://kotaku.com/343-studios-halo-infinite-layoffs-microsoft-bungie-1850016947",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/546953b094b4c8fcabcd774c2ac53117.jpg",
+            "publishedAt": "2023-01-22T22:15:00Z",
+            "content": "When Microsofta company that made $198 billion in revenue and $83 billion in operating income in 2022made the decision to axe 10,000 workers last week, a number of those came from their video game op… [+2090 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The A.V. Club"
+            },
+            "author": "Sam Barsanti",
+            "title": "David Crosby was working on a new album just before he died - The A.V. Club",
+            "description": "Crosby was reportedly interested in making music right up until he died",
+            "url": "https://www.avclub.com/david-crosby-working-on-new-album-before-death-1850016954",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ef69e0fc7f2cacf952b5a5cf88b728b2.jpg",
+            "publishedAt": "2023-01-22T22:14:00Z",
+            "content": "David Crosby died a few days ago, and while we already heard about a weird post-apocalyptic, alternate-history hippie documentary he never got to make, some of his collaborators recently revealed tha… [+1577 chars]"
+        },
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Tony Romm",
+            "title": "Republicans hold firm in demanding debt-ceiling deal with Biden - The Washington Post",
+            "description": "The GOP affirmed its political demands as Biden prepares to sit down with new House Speaker Kevin McCarthy (R-Calif.) in the coming days.",
+            "url": "https://www.washingtonpost.com/us-policy/2023/01/22/debt-limit-biden-gop/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/32D7V7ATF44CLSRLMMUXVPAQ2M.jpg&w=1440",
+            "publishedAt": "2023-01-22T21:47:00Z",
+            "content": "Comment on this story\r\nTop Republicans on Sunday blasted President Biden for refusing to negotiate a deal over the debt ceiling, renewing their threats to leverage the fiscally calamitous prospect of… [+4952 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "FOX 5 Atlanta"
+            },
+            "author": "FOX 5 Atlanta",
+            "title": "Downtown Atlanta Riot: Police release names, photos, charges of six arrested - FOX 5 Atlanta",
+            "description": "Atlanta police have released the names, mugshots and charges for the six suspects arrested during a riot in downtown Atlanta Saturday evening. Only one of the suspects was a Georgia resident.",
+            "url": "https://www.fox5atlanta.com/news/downtown-atlanta-riot-names-photos-charges",
+            "urlToImage": "https://images.foxtv.com/static.fox5atlanta.com/www.fox5atlanta.com/content/uploads/2023/01/1280/720/Untitled-design-2023-01-22T155734.737.jpg?ve=1&tl=1",
+            "publishedAt": "2023-01-22T21:28:24Z",
+            "content": "ATLANTA - Atlanta police have released the names, mugshots and charges for the six suspects arrested during a riot in downtown Atlanta Saturday evening. Only one of the suspects was a Georgia residen… [+1893 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MMA Fighting"
+            },
+            "author": "Guilherme Cruz",
+            "title": "Glover Teixeira avoids major injuries in UFC 283 war with Jamahal Hill - MMA Fighting",
+            "description": "The 43-year-old veteran absorbed 232 significant strikes in his UFC 283 main event loss to Jamahal Hill in Brazil.",
+            "url": "https://www.mmafighting.com/2023/1/22/23566663/glover-teixeira-avoids-major-injuries-ufc-283-war-jamahal-hill",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/St0uBjNiDEeD9urTax8_bGgvWVQ=/0x0:1320x691/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/24378381/Captura_de_Tela_2023_01_22__s_17.28.48.png",
+            "publishedAt": "2023-01-22T21:00:00Z",
+            "content": "RIO DE JANEIRO Glover Teixeira displayed a huge heart in what ended up being his retirement fight with Jamahal Hill at UFC 283, which went down Saturday night in Brazil, but he ultimately avoided maj… [+992 chars]"
+        },
+        {
+            "source": {
+                "id": "buzzfeed",
+                "name": "Buzzfeed"
+            },
+            "author": "Liz Richardson",
+            "title": "22 Wild Facts About The Human Body That Are Actually Really, Really Fascinating - Yahoo! Voices",
+            "description": "I will NEVER look at human beings the same again.",
+            "url": "https://www.buzzfeed.com/lizmrichardson/creepy-human-body-facts",
+            "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2023-01/20/16/enhanced/26674b544e3d/original-489-1674231044-25.jpg?crop=1200:628;0,0%26downsize=1250:*",
+            "publishedAt": "2023-01-22T20:16:02Z",
+            "content": "u/AdeleBerncastel\r\n\"In dental school, I learned this fact when practicing taking impressions on each other. My buddys tongue kept licking my finger. I asked him to quit licking me, and he was like, '… [+307 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "KOMO News"
+            },
+            "author": "Danny Schmidt, KOMO News",
+            "title": "Woman with measles was recently in Sea-Tac airport, Seattle Swedish - KOMO News",
+            "description": "The health department of King County and Seattle is investigating a new case of measles.",
+            "url": "https://komonews.com/news/local/king-county-seattle-measles-woman-confirmed-case-tacoma-international-airport-seatac-providence-swedish-hospital-doctor-first-hill-vaccine-vaccinated-investigation-symptoms",
+            "urlToImage": "https://komonews.com/resources/media/e45e4aaa-5dd6-4326-a45a-1b54d08b72bd-large16x9_measles.jpg?1674415427087",
+            "publishedAt": "2023-01-22T19:24:44Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Amanda Kooser",
+            "title": "Sweeping New Milky Way Portrait Captures More Than 3 Billion Stars - CNET",
+            "description": "Behold a \"gargantuan astronomical data tapestry\" of our glorious galaxy.",
+            "url": "https://www.cnet.com/science/space/sweeping-new-milky-way-portrait-captures-more-than-3-billion-stars/",
+            "urlToImage": "https://www.cnet.com/a/img/resize/80a9a5e41cb05ffa1aec0686c4960ce26433d4a6/hub/2023/01/19/4219393c-cbb2-4e32-afd3-403a8e145580/noirlab2301a.jpg?auto=webp&fit=crop&height=630&width=1200",
+            "publishedAt": "2023-01-22T18:14:00Z",
+            "content": "How many stars can you count when you look up into the clear night sky? Not nearly as many as the Dark Energy Camera in Chile. Scientists released a survey of a portion of our home Milky Way galaxy t… [+2444 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news",
+                "name": "ABC News"
+            },
+            "author": "Isabella Murray",
+            "title": "Sen. Coons says one key thing separates Biden, Trump docs cases -- but acknowledges political 'fallout' - ABC News",
+            "description": "\"We will get to the bottom of this,\" the Delaware Democrat said.",
+            "url": "https://abcnews.go.com/Politics/sen-coons-key-thing-separates-biden-trump-documents/story?id=96584867",
+            "urlToImage": "https://s.abcnews.com/images/Politics/senator-coons-abc-lv-230122-2_1674414866276_hpMain_16x9_992.jpg",
+            "publishedAt": "2023-01-22T18:11:15Z",
+            "content": "Sen. Chris Coons, a close ally of Joe Biden, on Sunday insisted there was a key difference between the current president and former President Donald Trump's handling of classified documents while out… [+4883 chars]"
+        }
+    ]
+}

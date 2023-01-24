@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Return Statement</title>
+</head>
+<body>
+    <script>
+        // Return Statement
+        let a = 70
+        let b = 30
+
+        function add(a, b) {
+            // console.log(a + b);
+            return a + b;
+        }
+
+        // let result = add(a, b)
+        // console.log(10 * result);
+
+        // console.log(add(a, b))
+
+        // ten times multiply 
+
+        // Default parameters ->
+        
+        function greeting(age, name="New User") {
+            return "Hello " + name + ", How are you?. You are " + age + " years old"
+            
+        }
+        // console.log(greeting("Harshit"))
+        // console.log(greeting("Harshi"))
+        // console.log(greeting(45))
+
+        // Callback functions
+        // one()
+        // function two(a) {
+        //     console.log(a);
+        // }
+
+        // function one(two) {
+        //     console.log("Hi, I am function one");
+        //     console.log("I am gonna be calling the function two");
+        //     two("Hi, I was called by function one.")
+        // }
+
+        // Anonymous function 
+
+        let abc = function (a, b) {
+            console.log("This is an anonymous function");
+            return a + b
+        }
+
+        // console.log(abc(2, 4))
+
+        // Arrow function 
+
+        let dfg = (x, y, z) => {
+            console.log("This is an arrow function");
+            return (x + y + z)
+        }
+
+        // console.log((dfg(1, 2, 3)))
+
+        // functions are also objects 
+
+        let one1 = 34 
+        let two2 = "This is a string" 
+
+        one1 = two2
+        let fn = greeting 
+        // console.log(fn(23))
+
+        // console.log(greeting(34))
+
+        // Objects: Real time entity that occupies some space and they behave a certain way.
+
+        // User defined functions ->   
+        // Predefined functions -> That are already defined in the language. You just need to call them whenever required.
+
+        // Numbers and String predefined function
+        
+        // "1233445" => 1233445
+        //  "abc" => abc
+        let str = "1233445"
+        console.log(str, typeof str);
+        let str2 = Number(str) 
+        console.log(str2, typeof str2);
+
+        // True - 1 
+        // false - 0 | False 
+
+        // ParseInt | parseFloat | Number - Difference (Home Assignment)
+        // String Predefined functions
+</script>
+</body>
+</html>

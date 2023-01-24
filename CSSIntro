@@ -1,0 +1,18 @@
+CSS -> Cascading Style Sheet -> Default stylesheet for HTML Document (Webpages)
+
+SASS -> LESS -> CSS -> 
+3 Ways of usage: Inline | Internal | External
+
+CSS Syntax: For Internal and External
+selector {
+    property: value; -> Rule 1
+    property: value; -> Rule 2
+}
+
+selector: Name selector(h1, p, ul, img) | ID selector(#id_name) | Class selector(.class_name)
+
+h1 {
+    background-color: white;
+}
+
+CSS -> Cascading Style Sheet (Waterfall)

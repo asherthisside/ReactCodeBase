@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Lists, Tables and Forms</title>
+</head>
+<!-- Meta data: Data about the data -->
+<body>
+    <!-- 3 Types: Ordered list | Unordered list | Description(Definition) lists -->
+    <!-- Ordered list: Recipe or Roll-number wise list of students -->
+    <ol type="i" start="11">
+        <li>Akash</li>
+        <li>Bulbull</li>
+        <li>Deeksha</li>
+        <li>Deepak</li>
+        <li>Farha</li>
+        <li>Gagan</li>
+    </ol>
+
+    <!-- Unordered list: List of beverages | Food Items  -->
+    <h2>List of beverages</h2>
+    <ul type="square">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Cold drinks</li>
+        <li>Lassi</li>
+        <li>Mojitos</li>
+    </ul>
+
+    <!-- Description list: To create the description list, we use <dl> tag, then <dt> to create titles and for descriptions, we use <dd> tag. -->
+    
+    <dl>
+        <dt>Tea</dt>
+        <!-- <dd>Made from tea leaves, tastes better when served hot</dd> -->
+        <dd>
+            <ul>
+                <li>Made from tea leaves</li>
+                <li>Tastes better when served hot</li>
+            </ul>
+        </dd>
+
+        <dt>Coffee</dt>
+        <dd>Made from cocoa beans, can be served both hot and cold.</dd>
+
+        <dt>Lassi</dt>
+        <dd>Sweet drink made up of curd. Popular in northern india.</dd>
+    </dl>
+
+    <h2>Types of Students</h2>
+    <ol>
+        <li>Those who have collected receipt</li>
+        <ol type="a">
+            <li>abc</li>
+            <li>def</li>
+            <li>ghi</li>
+        </ol>
+        <li>Those who have desposited fee</li>
+        <ol type="a">
+            <li>jkl</li>
+            <li>mno</li>
+            <li>pqr</li>
+        </ol>
+        <li>Defaulters</li>
+        <ol type="a">
+            <li>stu</li>
+            <li>vwx</li>
+            <li>yza</li>
+        </ol>
+    </ol>
+
+    <!-- Table: In form of rows and columns. To create a table, we use <table> tag. Then for rows, we use <tr>. For headings, <th> and <td> for normal data. -->
+
+    <table border="1" cellpadding="20" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll Number</th>
+        </tr>
+
+        <tr>
+            <td>Akash</td>
+            <td>12</td>
+            <td>0021</td>
+        </tr>
+
+        <tr>
+            <td>Bhavika</td>
+            <td>12</td>
+            <td>0022</td>
+        </tr>
+    </table>
+
+    <!-- Rowspan and colspan -->
+    <table border="1" cellspacing="0">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Marks</th>
+        </tr>
+
+        <tr>
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+        </tr>
+
+        <tr>
+            <td>Akanksha</td>
+            <td>98</td>
+            <td>99</td>
+        </tr>
+    </table>
+
+    <!-- td or th -->
+</body>
+</html>
+
+<!-- Nested lists -->
+<!-- 
+    Types of Students
+    1. Those who have collected receipt
+        a. abc
+        b. def
+        c. ghi
+
+    2. Those who have desposited fee
+        a. abc
+        b. def
+        c. ghi   
+
+    3. Defaulters    
+        a. abc
+        b. def
+        c. ghi
+
+ -->
