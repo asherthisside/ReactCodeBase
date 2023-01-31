@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 
 export default class Newsitem extends Component {
     render() {
+        const {title, description, urltoImage} = this.props
         return (
             <div className="card" style={{width: "18rem"}}>
-                <img src={this.props.urltoImage} className="card-img-top" alt="..." />
+                <img src={urltoImage} className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <h5 className="card-title">{this.props.title}</h5>
-                        <p className="card-text">{this.props.description}</p>
+                        <h5 className="card-title">{title} ... </h5>
+                        <p className="card-text">{description}...</p>
                         <a href="/" className="btn btn-primary">Read More</a>
                     </div>
             </div>

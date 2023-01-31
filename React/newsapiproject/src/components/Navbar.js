@@ -16,10 +16,26 @@ export default function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link" href="/">About Us</a>
                         </li>
+                        <li className="nav-item mx-3">
+                            <div className="dropdown">
+                                <button className="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </button>
+                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a className="dropdown-item" href="#">Business</a></li>
+                                    <li><a className="dropdown-item" href="#">Entertainment</a></li>
+                                    <li><a className="dropdown-item" href="#">General</a></li>
+                                    <li><a className="dropdown-item" href="#">Health</a></li>
+                                    <li><a className="dropdown-item" href="#">Science</a></li>
+                                    <li><a className="dropdown-item" href="#">Sports</a></li>
+                                    <li><a className="dropdown-item" href="#">Technology</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                        <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
