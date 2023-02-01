@@ -12,28 +12,28 @@ export default class Newslist extends Component {
     }
 
     async componentDidMount() {
-        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=9&page=${this.state.pageNumber}`
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=${this.props.pageSize}&page=${this.state.pageNumber}`
         let response = await fetch(url)
         let data = await response.json()
         console.log(data);
-        this.setState({articles : data.articles})
+        this.setState({articles : data.articles, totalResults: data.totalResults})
     }
 
-    async nextPageHandler() {
+    nextPageHandler = async () => {
         let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=9&page=${this.state.pageNumber+1}`
         let response = await fetch(url)
         let data = await response.json()
         console.log(data);
-        this.setState({articles : data.articles, pageNumber: this.state.pageNumber + 1})
+        this.setState({articles : data.articles, pageNumber: this.state.pageNumber+1, totalResults: data.totalResults})
         // console.log("Next");
     }
 
-    async prevPageHandler() {
-        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=9&page=${this.state.pageNumber - 1}`
+    prevPageHandler = async () => {
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=9&page=${this.state.pageNumber-1}`
         let response = await fetch(url)
         let data = await response.json()
         console.log(data);
-        this.setState({articles : data.articles, pageNumber: this.state.pageNumber + 1})
+        this.setState({articles : data.articles, pageNumber: this.state.pageNumber-1, totalResults: data.totalResults})
         // console.log("Previous");
     }
 
@@ -48,8 +48,8 @@ export default class Newslist extends Component {
                 })}
             </div>
             <div className="container d-flex justify-content-around my-5">
-                <button className='btn btn-dark' onClick={this.prevPageHandler}>&larr; Previous</button>
-                <button className='btn btn-dark' onClick={this.nextPageHandler}>Next &rarr;</button>
+                <button className='btn btn-dark' onClick={this.prevPageHandler} disabled={this.state.pageNumber <= 1}>&larr; Previous</button>
+                <button className='btn btn-dark' onClick={this.nextPageHandler} disabled={this.state.pageNumber >= Math.ceil(this.state.totalResults / 9)}>Next &rarr;</button>
             </div>
             </>
         )

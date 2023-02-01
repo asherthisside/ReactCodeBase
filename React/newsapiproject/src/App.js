@@ -10,7 +10,7 @@ export default class App extends Component {
       <Navbar />
       <div className="container">
         <h1 className="text-center display-4 my-3">Welcome to News Basket</h1>
-        <Newslist />
+        <Newslist category="business" country="us" pageSize="9"/>
       </div>
       </>
     )
