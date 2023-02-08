@@ -34,10 +34,10 @@ export default function Navbar(props) {
                             </div>
                         </li>
                     </ul>
-                    <i className="fa-solid fa-sun text-dark" style={{fontSize: "1.5rem"}}></i>
+                    <i className={`fa-solid fa-sun text-${props.mode === 'light' ? 'dark' : 'light'}`} style={{fontSize: "1.5rem"}}></i>
                     <div className="form-check form-switch mx-3">
                         <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.changeMode}/>
-                            <i className="fa-solid fa-moon text-dark" style={{fontSize: "1.5rem"}}></i>
+                            <i className={`fa-solid fa-moon text-${props.mode === 'light' ? 'dark' : 'light'}`} style={{fontSize: "1.5rem"}}></i>
                         </div>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
