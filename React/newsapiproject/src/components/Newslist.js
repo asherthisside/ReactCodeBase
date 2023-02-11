@@ -15,31 +15,26 @@ export default class Newslist extends Component {
 
     async componentDidMount() {
         let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=${this.props.pageSize}&page=${this.state.pageNumber}`
-        this.setState({loading: true, articles: []})
-        let response = await fetch(url)
-        let data = await response.json()
-        console.log(data);
-        this.setState({loading: false, articles : data.articles, totalResults: data.totalResults})
+        this.props.dataLoader(url).then(data => {
+            console.log(data);
+            this.setState({loading: false, articles : data.articles, totalResults: data.totalResults})
+        })
     }
     
     nextPageHandler = async () => {
         let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=${this.props.pageSize}&page=${this.state.pageNumber+1}`
-        this.setState({loading: true, articles: []})
-        let response = await fetch(url)
-        let data = await response.json()
-        console.log(data);
-        this.setState({loading: false, articles : data.articles, pageNumber: this.state.pageNumber+1, totalResults: data.totalResults})
-        // console.log("Next");
+        this.props.dataLoader(url).then(data => {
+            console.log(data);
+            this.setState({loading: false, articles : data.articles, totalResults: data.totalResults, pageNumber: this.state.pageNumber + 1})
+        })
     }
     
     prevPageHandler = async () => {
         let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=26096c9344b34bc2bd7b82422c3d6900&pageSize=${this.props.pageSize}&page=${this.state.pageNumber-1}`
-        this.setState({loading: true, articles: []})
-        let response = await fetch(url)
-        let data = await response.json()
-        console.log(data);
-        this.setState({loading: false, articles : data.articles, pageNumber: this.state.pageNumber-1, totalResults: data.totalResults})
-        // console.log("Previous");
+        this.props.dataLoader(url).then(data => {
+            console.log(data);
+            this.setState({loading: false, articles : data.articles, totalResults: data.totalResults, pageNumber: this.state.pageNumber - 1})
+        })
     }
 
     render() {
@@ -61,6 +56,3 @@ export default class Newslist extends Component {
         )
     }
 }
-
-
-// PageSize = 

@@ -1,7 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {useState} from 'react'
 
 export default function Navbar(props) {
+    const [query, setQuery] = useState('')
+    function getValue(e) {
+        setQuery(e.target.value)
+    }
+
+    function submitForm (e) {
+        e.preventDefault();
+        let url = `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=26096c9344b34bc2bd7b82422c3d6900`
+        props.dataLoader(url).then(data => {
+            console.log(data);
+        })
+    }
+
     return (
         <nav className={`navbar navbar-expand-lg border-3 border-bottom bg-${props.mode} navbar-${props.mode}`}>
             <div className="container-fluid">
@@ -39,8 +53,8 @@ export default function Navbar(props) {
                         <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.changeMode}/>
                             <i className={`fa-solid fa-moon text-${props.mode === 'light' ? 'dark' : 'light'}`} style={{fontSize: "1.5rem"}}></i>
                         </div>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <form className="d-flex" role="search" onSubmit={submitForm}>
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={query} onChange={getValue}/>
                         <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>

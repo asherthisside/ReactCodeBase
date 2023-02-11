@@ -6,7 +6,7 @@ export default class Newsitem extends Component {
         return (
             <div className="card m-2">
                 <div className="news-source my-2 d-flex justify-content-center">
-                <span class="badge text-bg-success">{source}</span>
+                <span className="badge text-bg-success">{source}</span>
                 </div>
                 <img src={urltoImage} className="card-img-top" alt="..." />
                     <div className="card-body">
