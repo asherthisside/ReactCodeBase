@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Newsitem from './Newsitem'
 import placeholderImage from '../placeholder_image.png'
 import Placeholder from './Placeholder'
+import { useContext } from 'react'
+import queryContext from '../context/queryContext'
 
 export default class Newslist extends Component {
     constructor() {
@@ -19,6 +21,11 @@ export default class Newslist extends Component {
             console.log(data);
             this.setState({loading: false, articles : data.articles, totalResults: data.totalResults})
         })
+    }
+
+    contextUser = () => {
+        const a = useContext(queryContext)
+        console.log("This is", a);
     }
     
     nextPageHandler = async () => {
@@ -40,6 +47,7 @@ export default class Newslist extends Component {
     render() {
         return (
             <>
+            {/* {this.contextUser()} */}
             {this.state.loading && <Placeholder />}
             <div className='row'>
                 {this.state.articles.map((element) => {

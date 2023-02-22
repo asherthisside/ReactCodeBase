@@ -7,7 +7,7 @@ export default function Navbar(props) {
     function getValue(e) {
         setQuery(e.target.value)
     }
-
+ 
     function submitForm (e) {
         e.preventDefault();
         let url = `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=26096c9344b34bc2bd7b82422c3d6900`

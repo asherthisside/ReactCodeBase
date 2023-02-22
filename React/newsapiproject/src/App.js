@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Navbar from './components/Navbar';
 import Newslist from './components/Newslist';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import QueryState from './context/queryState';
 
 export default class App extends Component {
   constructor() {
@@ -36,6 +37,7 @@ export default class App extends Component {
   render() {
     return (
       <>
+      <QueryState>
         <BrowserRouter>
           <Navbar mode={this.state.mode} changeMode={this.changeMode} dataLoader={this.dataLoader}/>
           <div className="container">
@@ -51,6 +53,7 @@ export default class App extends Component {
             </Routes>
           </div>
         </BrowserRouter>
+        </QueryState>
       </>
     )
   }
